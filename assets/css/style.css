@@ -1,0 +1,33 @@
+/* Wildcard selector for overriding default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+}
+
+
+/* Header properties */
+header {
+    background-color: rgba(255, 0, 0, 0.562);
+}
+
+/* Main content */
+main {
+    background-color: rgba(173, 216, 230, 0.623);
+    /* Makes main element takes surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer properties */
+footer {
+    background-color: rgba(255, 166, 0, 0.541);
+}
