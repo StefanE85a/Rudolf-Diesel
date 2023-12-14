@@ -91,6 +91,7 @@ main {
     background-color: rgba(173, 216, 230, 0.623);
     /* Makes main element takes surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer properties */
