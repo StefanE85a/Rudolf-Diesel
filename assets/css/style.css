@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
+/* Generic project styles */
     color: #3a3a3a;
     font-family: 'Kanit', sans-serif;
 }
@@ -89,9 +89,36 @@ nav {
 /* Main content */
 main {
     background-color: rgba(173, 216, 230, 0.623);
-    /* Makes main element takes surplus space to push footer down */
+/* Makes main element takes surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+#form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#form>h1,i {
+    margin-top: 80px;;
+}
+
+#form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+.text-input {
+    background: #ffffff;
+    color: #000000;
+    width: 10%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
 }
 
 /* Footer properties */
@@ -106,7 +133,7 @@ main {
 }
 
 #social-networks i {
-    font-size: 160%;
+    font-size: 360%;
     padding: 5%;
     color: #3a3a3a;
 
@@ -121,7 +148,7 @@ main {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /* Header */
+/* Header */
 nav {
     display: block;
     position: relative;
@@ -148,9 +175,9 @@ nav {
     margin: 0 0.5rem;
 }
 
-    /* Main content */
+/* Main content */
     main {
-    /* Make header larger and push down main content */
+/* Make header larger and push down main content */
     margin-top: 79px;
 }
 
@@ -162,8 +189,4 @@ nav {
         border-bottom: 1px solid #3a3a3a;
     }
 
-    /* Gallery */
-    #photos {
-        column-count: 4;
-    }
 }
