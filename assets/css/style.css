@@ -44,13 +44,16 @@ h1 {
     color: #252525;
 }
 
+#logo {
+    font-size: 130%;
+    line-height: 25px;
+    margin: 0 0.5rem;
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-
-
-
 }
 
 #menu > li {
@@ -88,7 +91,7 @@ nav {
 
 /* Main content */
 main {
-    background-color: rgba(173, 216, 230, 0.623);
+    background-color: #373737;
 /* Makes main element takes surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
@@ -101,11 +104,13 @@ main {
 }
 
 #form>h1,i {
-    margin-top: 80px;;
+    position: center center;
+    padding-top: 15%;
+    color: rgba(255, 255, 255, 0.842);
 }
 
-#form>h2 {
-    color: #fafafa;
+#form>h2,p {
+    color: rgba(255, 255, 255, 0.842);
     margin-bottom: 20px;
 }
 
@@ -113,7 +118,7 @@ main {
 .text-input {
     background: #ffffff;
     color: #000000;
-    width: 10%;
+    width: 80%;
     height: 25px;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
@@ -122,6 +127,10 @@ main {
 }
 
 /* Footer properties */
+
+footer {
+    background-color: #131313;
+}
 
 #social-networks { 
     text-align: center;
@@ -133,7 +142,7 @@ main {
 }
 
 #social-networks i {
-    font-size: 360%;
+    font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 
@@ -142,7 +151,7 @@ main {
 /* Footer Instagram hover color */
 #social-networks i:hover {
     
-    color: rgb(42, 121, 173);
+    color: rgba(255, 255, 255, 0.548);
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -175,6 +184,31 @@ nav {
     margin: 0 0.5rem;
 }
 
+.text-input {
+    background: #ffffff;
+    color: #000000;
+    width: 15%;
+}
+
+#social-networks i {
+    font-size: 460%;
+    padding: 5%;
+    color: #3a3a3a;
+
+}
+
+.text-input {
+    width: 50%;
+}
+
+#form>h1,i {
+    font-size: 200%;
+}
+
+#form>h2,p {
+    font-size: 200%;
+}
+
 /* Main content */
     main {
 /* Make header larger and push down main content */
@@ -188,5 +222,20 @@ nav {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+#form>h1,i {
+    position: center center;
+    padding-top: 2%;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+#form>h2,p {
+    color: rgba(255, 255, 255, 0.842);
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 20%;
+}
 
 }
