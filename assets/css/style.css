@@ -103,16 +103,16 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
+nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
 }
 
 #menu {
-        display: flex;
+    display: flex;
 }
 
 #menu>li {
@@ -120,7 +120,19 @@ footer {
 }
 
 .nav-toggle-label {
-        display: none;
+    display: none;
+}
+
+#logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+}
+
+    /* Main content */
+    main {
+    /* Make header larger and push down main content */
+    margin-top: 79px;
 }
 
 }
