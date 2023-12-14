@@ -109,6 +109,13 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+
+}
+
+/* Footer Instagram hover color */
+#social-networks i:hover {
+    
+    color: rgb(42, 121, 173);
 }
 
 /* Media query: tablets and larger (768px and up) */
