@@ -20,8 +20,7 @@ body {
 
 /* Header properties */
 header {
-    background-color: rgba(255, 0, 0, 0.562);
-    background-color: #ffffff;
+    background-color: #131313;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -41,7 +40,7 @@ h1 {
     font-family: 'Kanit', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525;
+    color: #ffffffd7;
 }
 
 #logo {
@@ -58,6 +57,7 @@ h1 {
 
 #menu > li {
     margin-bottom: 1em;
+    color: rgba(255, 255, 255, 0.842);
 }
 
 .underscore {
@@ -67,7 +67,7 @@ h1 {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #131313;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -121,10 +121,26 @@ main {
     width: 80%;
     height: 25px;
     margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
+    border: 1px solid #131313;
     border-radius: 2px;
     padding: 0 5px;
+    text-align: center;
 }
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #131313;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.join-button:hover {
+    background-color: #171717;
+    color: rgba(255, 255, 255, 0.842);
+}
+
 
 /* Footer properties */
 
@@ -168,6 +184,10 @@ nav {
 
 #menu {
     display: flex;
+    font-size: 140%;
+    letter-spacing: 4px;
+    list-style-type: none;
+
 }
 
 #menu>li {
@@ -205,10 +225,13 @@ nav {
     font-size: 200%;
 }
 
-#form>h2,p {
+#form>h2,i {
     font-size: 200%;
 }
 
+.join-button {
+    font-size: 100%;
+}
 /* Main content */
     main {
 /* Make header larger and push down main content */
@@ -236,6 +259,10 @@ nav {
 
 .text-input {
     width: 20%;
+}
+
+.join-button {
+    font-size: 100%;
 }
 
 }
