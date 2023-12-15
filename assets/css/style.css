@@ -104,7 +104,6 @@ main {
 }
 
 #form>h1,i {
-    position: center center;
     padding-top: 15%;
     color: rgba(255, 255, 255, 0.842);
 }
@@ -247,7 +246,6 @@ nav {
     }
 
 #form>h1,i {
-    position: center center;
     padding-top: 2%;
     color: rgba(255, 255, 255, 0.842);
 }
