@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* -----Body styles----- */
 body {
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
-/* Header properties */
+/* Header Section */
 header {
   background-color: #131313;
   padding: 0 1rem;
@@ -90,7 +90,7 @@ nav {
   font-size: 2rem;
 }
 
-/* Main content */
+/* -----Main content----- */
 main {
   background-color: #0a0705;
   /* Makes main element takes surplus space to push footer down */
@@ -135,7 +135,7 @@ h1,h2 {
     background-color: #171717;
                 }
 
-/* The hero-image */
+/* The hero-image Section*/
 
 #hero {
   background: url("../images/pexels-mark-plotz-2790396.webp") no-repeat center
@@ -157,7 +157,7 @@ h1,h2 {
   padding-top: 10px;
   bottom: 0;
 }
-
+/* Font text for Hero-image */
 #hero-text > h2,
 #hero-text > h3 {
   color: #ffffff;
@@ -179,6 +179,7 @@ h1,h2 {
   justify-content: center;
   align-items: center;
 }
+/* Read More Button for Hero-image */
 
 .text-button > button1 {
   background-color: rgba(254, 172, 135, 0.64);
@@ -203,10 +204,6 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
   float: left;
   width: 100%;
@@ -218,7 +215,7 @@ div.desc {
   clear: both;
 }
 
-/* Footer properties */
+/* -----Footer Section----- */
 
 footer {
   background-color: #131313;
@@ -247,7 +244,7 @@ footer {
   color: rgba(255, 255, 255, 0.548);
 }
 
-/* Media query: tablets and larger (768px and up) */
+/* -----Media query: tablets and larger (768px and up)----- */
 @media screen and (min-width: 768px) {
   /* Header */
   nav {
@@ -335,31 +332,10 @@ div.gallery img {
       bottom: 0;
 }
 
-/* Large devices - laptops and desktops (992px and up) */
+/* -----Large devices - laptops and desktops (992px and up)----- */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
-  }
-
-  #form > h1,
-  i {
-    padding-top: 2%;
-    color: rgba(255, 255, 255, 0.842);
-  }
-
-  #form > h2,
-  p {
-    color: rgba(255, 255, 255, 0.842);
-    margin-bottom: 20px;
-  }
-
-  .text-input {
-    width: 20%;
-    background-color: rgba(255, 255, 255, 0.842);
-  }
-
-  .join-button {
-    font-size: 100%;
   }
 
 /* Gallery properties */
