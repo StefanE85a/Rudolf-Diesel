@@ -1,318 +1,419 @@
 /* Adding Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
 
 /* Wildcard selector for overriding default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Body styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'Kanit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #3a3a3a;
+  font-family: "Kanit", sans-serif;
 }
 
 /* Header properties */
 header {
-    background-color: #131313;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  background-color: #131313;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  top: 0;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
-    font-family: 'Kanit', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffffd7;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffffd7;
 }
 
 #logo {
-    font-size: 130%;
-    line-height: 25px;
-    margin: 0 0.5rem;
+  font-size: 130%;
+  line-height: 25px;
+  margin: 0 0.5rem;
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 
-#menu>li {
-    margin-bottom: 1em;
-    color: rgba(255, 255, 255, 0.842);
+#menu > li {
+  margin-bottom: 1em;
+  color: rgba(255, 255, 255, 0.842);
 }
 
 .underscore {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    background-color: #131313;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
+  position: absolute;
+  background-color: #131313;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked ~ nav {
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main content */
 main {
-    background-color: #0a0705;
-    /* Makes main element takes surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px;
+  background-color: #0a0705;
+  /* Makes main element takes surplus space to push footer down */
+  flex: 1 0 auto;
+  margin-top: 47px;
 }
 
-#form {
-    color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
-}
-
-#form>h1,
-i {
-    padding-top: 15%;
-    color: rgba(255, 255, 255, 0.842);
-}
-
-#form>h2,
-p {
-    color: rgba(255, 255, 255, 0.842);
-    margin-bottom: 20px;
-}
-
-
-.text-input {
-    background-color: #ffffff;
-    color: #000000;
-    width: 80%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #131313;
-    border-radius: 2px;
-    padding: 0 5px;
+/* Sign up form page */
+form {
     text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgba(28, 32, 38, 0.84);
+    color: #ffffff;
+    border-radius: 10px;
 }
-
+        
+h1,h2 {
+    margin: 0;
+}
+        
+.text-input {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+                    
+}
+        
 .join-button {
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px;
-    font-size: 100%;
+    width: 25%;
+    padding: 15px;
+    font-size: 16px;
     background-color: #131313;
     color: rgba(255, 255, 255, 0.842);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
+        
 .join-button:hover {
     background-color: #171717;
-    color: rgba(255, 255, 255, 0.842);
-}
+                }
 
 /* The hero-image */
 
-.hero-container {
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    margin-top: 0px;
-    /* Adjust margin to push down the main content */
+#hero {
+  background: url("../images/pexels-mark-plotz-2790396.webp") no-repeat center
+    center/cover;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding-bottom: 100px;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: auto;
+#hero-text {
+  /* Final rgba value sets the opacity so it is semi-transparent */
+  background-color: rgba(28, 32, 38, 0.84);
+  font-size: 120%;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 10px;
+  bottom: 0;
+}
+
+#hero-text > h2,
+#hero-text > h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 130%;
 
 }
 
-.hero-text {
-    position: absolute;
-    top: 78%;
-    left: 50%;
-    padding: 15px 15px 15px 15px;
-    transform: translate(-50%, -50%);
-    /* Background-color from smoke on picture #1c2026 */
-    background-color: rgba(28, 32, 38, 0.84);
-
+.text-button {
+  border: none;
+  color: white;
+  padding: 20px 36px;
+  text-align: center;
+  display: flex;
+  font-size: 26px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-button {
-    display: inline-block;
-    padding: 8px 15px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.text-button > button1 {
+  background-color: rgba(254, 172, 135, 0.64);
+  color: white;
+  padding: 10px 5px 10px 5px;
 }
 
-.hero-button:hover {
-    background-color: #45a049;
+.text-button > button1:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Gallery properties */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  float: left;
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer properties */
 
 footer {
-    background-color: #131313;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
+  background-color: #131313;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /* Footer hover color */
 #social-networks i:hover {
-
-    color: rgba(255, 255, 255, 0.548);
+  color: rgba(255, 255, 255, 0.548);
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
 
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
+  #menu {
+    display: flex;
+    font-size: 140%;
+    letter-spacing: 4px;
+    list-style-type: none;
+  }
 
-    #menu {
-        display: flex;
-        font-size: 140%;
-        letter-spacing: 4px;
-        list-style-type: none;
+  #menu > li {
+    padding-left: 1rem;
+  }
 
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    #menu>li {
-        padding-left: 1rem;
-    }
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-    .nav-toggle-label {
-        display: none;
-    }
+  #social-networks i {
+    font-size: 250%;
+    padding: 5%;
+    color: #3a3a3a;
+  }
 
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
+  .text-input {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.842);
+  }
 
-    #social-networks i {
-        font-size: 250%;
-        padding: 5%;
-        color: #3a3a3a;
+/* Sign up form page */
 
-    }
-
-    .text-input {
-        width: 50%;
-        background-color: rgba(255, 255, 255, 0.842);
-    }
-
-    #form>h1,
-    i {
-        font-size: 200%;
-    }
-
-    #form>h2,
-    i {
-        font-size: 200%;
-    }
-
-    .join-button {
-        font-size: 100%;
-    }
-
-    /* Main content */
-
-    main {
-        /* Make header larger and push down main content */
-        margin-top: 79px;
-    }
-
+.join-button {
+    width: 50%;
 }
 
+  /* Main content */
+
+  main {
+    /* Make header larger and push down main content */
+    margin-top: 79px;
+  }
+
+/* Gallery properties */
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.responsive {
+    float: left;
+    width: 33.3%;
+}
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Hero image text*/
+
+  #hero-text {
+      /* Final rgba value sets the opacity so it is semi-transparent */
+      background-color: rgba(28, 32, 38, 0.84);
+      font-size: 120%;
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      min-height: 180px;
+      padding-top: 10px;
+      bottom: 0;
+}
 
 /* Large devices - laptops and desktops (992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
 
-    #form>h1,
-    i {
-        padding-top: 2%;
-        color: rgba(255, 255, 255, 0.842);
-    }
+  #form > h1,
+  i {
+    padding-top: 2%;
+    color: rgba(255, 255, 255, 0.842);
+  }
 
-    #form>h2,
-    p {
-        color: rgba(255, 255, 255, 0.842);
-        margin-bottom: 20px;
-    }
+  #form > h2,
+  p {
+    color: rgba(255, 255, 255, 0.842);
+    margin-bottom: 20px;
+  }
 
-    .text-input {
-        width: 20%;
-        background-color: rgba(255, 255, 255, 0.842);
-    }
+  .text-input {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.842);
+  }
 
-    .join-button {
-        font-size: 100%;
-    }
+  .join-button {
+    font-size: 100%;
+  }
+
+/* Gallery properties */
+
+div.gallery img {
+    width: 100%;
+    height: 600px;
+}
+
+.responsive {
+    float: left;
+    width: 33.3%;
+}
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+    /*Hero image text*/
+    
+#hero-text {
+    background-color: rgba(28, 32, 38, 0.84);
+    font-size: 120%;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    min-height: 180px;
+    padding-top: 10px;
+    bottom: 0;
+}
+
+/* Sign up form page */
+
+form {
+    text-align: center;
+    max-width: 100%;
+    padding: 150px;
+    background-color: rgba(28, 32, 38, 0.84);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.text-input {
+    width: 20%;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.join-button {
+    width: 5%;
+}
+}
 
 }
