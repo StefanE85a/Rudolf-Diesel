@@ -103,7 +103,7 @@ form {
     text-align: center;
     max-width: 100%;
     padding: 20px;
-    background-color: rgba(28, 32, 38, 0.84);
+    background-color: rgba(11, 11, 11, 0.84);
     color: #ffffff;
     border-radius: 10px;
 }
@@ -123,8 +123,8 @@ h1,h2 {
     width: 25%;
     padding: 15px;
     font-size: 16px;
-    background-color: #131313;
-    color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(255, 255, 255, 0.24);
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -132,7 +132,7 @@ h1,h2 {
 }
         
 .join-button:hover {
-    background-color: #171717;
+    background-color: #3a3a3a;
                 }
 
 /* -----The hero-image Section----- */
@@ -253,7 +253,7 @@ footer {
 /* ---------------Media query: tablets and larger (768px and up)--------------- */
 @media screen and (min-width: 768px) {
 
-  /* -----Header Menu----- */
+/* -----Header Menu----- */
   nav {
     display: block;
     position: relative;
@@ -290,7 +290,11 @@ footer {
     color: #3a3a3a;
   }
 
-  /* -----Sign up form page----- */
+/* -----Sign up form page----- */
+form {
+        background-color: rgba(11, 11, 11, 0.84);
+}
+
   .text-input {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.842);
@@ -300,10 +304,14 @@ footer {
     width: 50%;
 }
 
-  /* -----Main content----- */
+.join-button:hover {
+    background-color: #3a3a3a;
+}
+
+/* -----Main content----- */
 
   main {
-    /* Make header larger and push down main content */
+/* Make header larger and push down main content */
     margin-top: 79px;
   }
 
@@ -325,10 +333,10 @@ div.gallery img {
     clear: both;
   }
 
-  /* -----Hero image text----- */
+/* -----Hero image text----- */
 
   #hero-text {
-      /* Final rgba value sets the opacity so it is semi-transparent */
+/* Final rgba value sets the opacity so it is semi-transparent */
       background-color: rgba(28, 32, 38, 0.84);
       font-size: 120%;
       position: absolute;
@@ -351,7 +359,7 @@ div.gallery img {
 }
 
 /* -----Large devices - laptops and desktops (992px and up)----- */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
@@ -374,7 +382,7 @@ div.gallery img {
     clear: both;
   }
 
-    /* -----Hero image text----- */
+/* -----Hero image text----- */
     
 #hero-text {
     background-color: rgba(28, 32, 38, 0.84);
@@ -393,7 +401,7 @@ form {
     text-align: center;
     max-width: 100%;
     padding: 150px;
-    background-color: rgba(28, 32, 38, 0.84);
+    background-color: rgba(11, 11, 11, 0.14);
     color: #ffffff;
     border-radius: 10px;
 }
@@ -407,6 +415,10 @@ form {
 
 .join-button {
     width: 5%;
+}
+
+.join-button:hover {
+    background-color: #3a3a3a;
 }
 
 /* -----Read More Button for Hero-image----- */
