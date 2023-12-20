@@ -1,24 +1,24 @@
-/* Adding Google fonts import */
+/* -----Adding Google fonts import----- */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
 
-/* Wildcard selector for overriding default styles added by the browser */
+/* -----Overriding default styles added by the browser----- */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* -----Body styles----- */
+/* ------------------------------Body styles------------------------------ */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* Generic project styles */
+/* -----Generic project styles----- */
   color: #3a3a3a;
   font-family: "Kanit", sans-serif;
 }
 
-/* Header Section */
+/* ------------------------------Header Section------------------------------ */
 header {
   background-color: #131313;
   padding: 0 1rem;
@@ -31,7 +31,7 @@ header {
   align-items: baseline;
   top: 0;
 }
-
+/* -----Header Menu and Logo----- */
 header a {
   text-decoration: none;
   color: inherit;
@@ -65,7 +65,7 @@ h1 {
   border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles with dropdown toggle */
+/* -----Navbar styles dropdown toggle----- */
 nav {
   position: absolute;
   background-color: #131313;
@@ -77,7 +77,7 @@ nav {
   top: 100%;
 }
 
-/* Nav toggle */
+/* -----Nav toggle----- */
 #nav-toggle:checked ~ nav {
   display: block;
 }
@@ -90,15 +90,15 @@ nav {
   font-size: 2rem;
 }
 
-/* -----Main content----- */
+/* ------------------------------Main content------------------------------ */
 main {
-  background-color: #0a0705;
-  /* Makes main element takes surplus space to push footer down */
+  background-color: #0b0b0b;
+  /* -----Element takes surplus space to push footer down----- */
   flex: 1 0 auto;
   margin-top: 47px;
 }
 
-/* Sign up form page */
+/* -----Sign up form page----- */
 form {
     text-align: center;
     max-width: 100%;
@@ -135,8 +135,7 @@ h1,h2 {
     background-color: #171717;
                 }
 
-/* The hero-image Section*/
-
+/* -----The hero-image Section----- */
 #hero {
   background: url("../images/pexels-mark-plotz-2790396.webp") no-repeat center
     center/cover;
@@ -147,7 +146,7 @@ h1,h2 {
 }
 
 #hero-text {
-  /* Final rgba value sets the opacity so it is semi-transparent */
+
   background-color: rgba(28, 32, 38, 0.84);
   font-size: 120%;
   position: absolute;
@@ -157,7 +156,7 @@ h1,h2 {
   padding-top: 10px;
   bottom: 0;
 }
-/* Font text for Hero-image */
+/* -----Font text for Hero-image----- */
 #hero-text > h2,
 #hero-text > h3 {
   color: #ffffff;
@@ -166,7 +165,7 @@ h1,h2 {
 
 }
 
-/* Read More Button for Hero-image */
+/* -----Read More Button for Hero-image----- */
 .text-button {
     border: none;
     color: white;
@@ -182,7 +181,6 @@ h1,h2 {
     position: absolute;
     width: 100%;
     top: 50%;
-    /* Center vertically */
     transform: translateY(-50%);
 }
 
@@ -201,8 +199,7 @@ h1,h2 {
     background-color: #04aa6d;
     color: white;
 }
-/* Gallery properties */
-
+/* -----Gallery properties----- */
 div.gallery img {
   width: 100%;
   height: auto;
@@ -224,7 +221,7 @@ div.desc {
   clear: both;
 }
 
-/* -----Footer Section----- */
+/* ------------------------------Footer Section------------------------------ */
 
 footer {
   background-color: #131313;
@@ -233,7 +230,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
+/* -----Social Media Icons----- */
 #social-networks {
   text-align: center;
   padding: 20px 0;
@@ -248,14 +245,15 @@ footer {
   color: #3a3a3a;
 }
 
-/* Footer hover color */
+/* -----Footer hover color----- */
 #social-networks i:hover {
   color: rgba(255, 255, 255, 0.548);
 }
 
-/* -----Media query: tablets and larger (768px and up)----- */
+/* ---------------Media query: tablets and larger (768px and up)--------------- */
 @media screen and (min-width: 768px) {
-  /* Header */
+
+  /* -----Header Menu----- */
   nav {
     display: block;
     position: relative;
@@ -284,32 +282,32 @@ footer {
     line-height: 75px;
     margin: 0 0.5rem;
   }
-
+  
+/* -----Social Media Icons----- */
   #social-networks i {
     font-size: 250%;
     padding: 5%;
     color: #3a3a3a;
   }
 
+  /* -----Sign up form page----- */
   .text-input {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.842);
   }
 
-/* Sign up form page */
-
 .join-button {
     width: 50%;
 }
 
-  /* Main content */
+  /* -----Main content----- */
 
   main {
     /* Make header larger and push down main content */
     margin-top: 79px;
   }
 
-/* Gallery properties */
+/* -----Gallery properties----- */
 
 div.gallery img {
     width: 100%;
@@ -327,7 +325,7 @@ div.gallery img {
     clear: both;
   }
 
-  /*Hero image text*/
+  /* -----Hero image text----- */
 
   #hero-text {
       /* Final rgba value sets the opacity so it is semi-transparent */
@@ -358,7 +356,7 @@ div.gallery img {
     border-bottom: 1px solid #3a3a3a;
   }
 
-/* Gallery properties */
+/* -----Gallery properties----- */
 
 div.gallery img {
     width: 100%;
@@ -376,7 +374,7 @@ div.gallery img {
     clear: both;
   }
 
-    /*Hero image text*/
+    /* -----Hero image text----- */
     
 #hero-text {
     background-color: rgba(28, 32, 38, 0.84);
@@ -389,7 +387,7 @@ div.gallery img {
     bottom: 0;
 }
 
-/* Sign up form page */
+/* -----Sign up form page----- */
 
 form {
     text-align: center;
@@ -411,7 +409,7 @@ form {
     width: 5%;
 }
 
-/* Read More Button for Hero-image */
+/* -----Read More Button for Hero-image----- */
 .text-button {
     border: none;
     color: white;
@@ -427,7 +425,6 @@ form {
     position: absolute;
     width: 100%;
     top: 50%;
-    /* Center vertically */
     transform: translateY(-50%);
 }
 
