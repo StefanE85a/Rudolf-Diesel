@@ -166,32 +166,41 @@ h1,h2 {
 
 }
 
-.text-button {
-  border: none;
-  color: white;
-  padding: 20px 36px;
-  text-align: center;
-  display: flex;
-  font-size: 26px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-}
 /* Read More Button for Hero-image */
-
-.text-button > button1 {
-  background-color: rgba(254, 172, 135, 0.64);
-  color: white;
-  padding: 10px 5px 10px 5px;
+.text-button {
+    border: none;
+    color: white;
+    padding: 0px 26px;
+    text-align: center;
+    display: flex;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
 }
 
-.text-button > button1:hover {
-  background-color: #04aa6d;
-  color: white;
+#button1 {
+    background-color: rgba(254, 172, 135, 0.64);
+    color: white;
+    padding: 10px 5px;
+    width: 50%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
+#button1:hover {
+    background-color: #04aa6d;
+    color: white;
+}
 /* Gallery properties */
 
 div.gallery img {
@@ -332,6 +341,17 @@ div.gallery img {
       bottom: 0;
 }
 
+#button1 {
+    background-color: rgba(254, 172, 135, 0.64);
+    color: white;
+    padding: 10px 5px;
+    width: 20%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 /* -----Large devices - laptops and desktops (992px and up)----- */
 @media screen and (min-width: 992px) {
   #menu a:hover {
@@ -389,6 +409,37 @@ form {
 
 .join-button {
     width: 5%;
+}
+
+/* Read More Button for Hero-image */
+.text-button {
+    border: none;
+    color: white;
+    padding: 0px 26px;
+    text-align: center;
+    display: flex;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+}
+
+#button1 {
+    background-color: rgba(254, 172, 135, 0.64);
+    color: white;
+    padding: 10px 5px;
+    width: 10%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 }
 
