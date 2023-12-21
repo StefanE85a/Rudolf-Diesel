@@ -232,12 +232,22 @@ div.desc {
 .image-container img {
     max-width: 100%;
     height: auto;
+    color: #d1d1d1;
 }
 
 .image-container2 img {
     max-width: 100%;
     height: auto;
+    color: #d1d1d1;
 }
+
+.image-container, .image-text-container p {
+        color: #d1d1d1;
+    }
+
+.image-container2, .image-text-container p {
+        color: #d1d1d1;
+    }
 
 /* ------------------------------Footer Section------------------------------ */
 
