@@ -1,39 +1,127 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#
 
-Welcome,
+![Project-image](documentation/images/Mockup-index.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Rudolf Diesel: The Man Behind a Revolution
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## <u>About this Project</u>
 
-## Codeanywhere Reminders
+Welcome to the Readme of a dedicated website to exploring the life and legacy of Rudolf Diesel,
+the renowned inventor of the diesel engine. This website aims to provide a minor
+overview of Diesel's contributions to mechanical engineering and the impact of his
+innovations on industrial and transportation sectors.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+This is a project at Code Institute and serves as an informative resource for those interested
+in the history of engineering and industrial innovation. By diving into Diesel's life and work,
+I aim to provide an understanding of the man behind a key technological advancement
+that continues to play a vital role in our world.
 
-`python3 -m http.server`
+# <U>Key Features</U>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### <u>Navigation Bar</u>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **Home**: The landing page for the website.
+- **About**: A page that decsribes Rudolf Diesels life.
+- **Sign up**: A page for users to request news-letters.
+- Menu turns into a bar-icon in mobile-view.
 
-`http_server`
+### <u>Engaging Footer</u>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The footer offers hover-effects and links to the organization's social media profiles, ensuring users can stay updated on news and developments related to Rudolf Diesel.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### <u>Sign-Up Form</u>
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Users can subscribe to receive updates and newsletters about Rudolf Diesel.
 
-To log into the Heroku toolbelt CLI:
+# <u>Tests of the websites code</u>
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **HTML**: The website passes the official W3C validator with no errors.
+- **CSS**: It also passes the official (Jigsaw) validator, free from errors.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* HTML
 
----
+- [Home/Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstefane85a.github.io%2FRudolf-Diesel%2Findex.html)
+- [About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstefane85a.github.io%2FRudolf-Diesel%2Fabout.html)
+- [Sign Up](https://validator.w3.org/nu/?doc=https%3A%2F%2Fstefane85a.github.io%2FRudolf-Diesel%2Fsignup.html)
 
-Happy coding!
+* CSS
+
+- [Style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstefane85a.github.io%2FRudolf-Diesel%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+
+![Lighthouse Score](documentation/images/Lighthouse-test.png)
+
+- The perfomance-score could be heigher with smaller images.
+
+## <u>Deployment Process</u>
+
+The website is hosted on GitHub Pages, with deployment accomplished through the following steps:
+
+1. Within the GitHub repository, access the **Settings** tab.
+2. From the source section drop-down menu, select the **Master Branch**.
+3. Once the master branch is selected, the page will automatically refresh, signifying a successful deployment.
+
+You can explore the live site by clicking on the following links:
+
+- [Rudolf Diesels Website](https://stefane85a.github.io/Rudolf-Diesel/index.html)
+- [About](https://stefane85a.github.io/Rudolf-Diesel/about.html)
+- [Sign Up](https://stefane85a.github.io/Rudolf-Diesel/signup.html)
+
+# <u>Tests Made</u>
+
+## Tested Devices
+- Galaxy fold
+- Galaxy S23
+- Ipad
+- Lenovo Legion Laptop
+
+## Tested Browsers
+- Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+## Bugs not fixed
+
+- Sign up button background changes width and is not center on galaxy-fold.
+- Mediascreen needs improvement so site functions shows correctly.
+
+## Future Enhancements
+
+- Fix sign up button or replace from index-page.
+- Replace image-sizes to smaller ones to make better perfomance-score.
+- Adjust colors overall if needed.
+- Create a better favicon.
+
+# <u>Credits</u>
+
+### The Content
+
+- The content for the About page has been adapted from a [Wikipedia article](https://en.wikipedia.org/wiki/Rudolf_Diesel#Early_life_and_education) about Rudolf Diesel.
+- I had guidance to implement the form of validation on the "Sign up page", responsive menu and hero-image from [Code institute](https://codeinstitute.net/ie/) videos.
+- Icons featured in the footer are sourced from [Fontawesome](https://fontawesome.com/start).
+- The gallery imagesand "Learn More" -button is adapted from [W3Schools](https://www.w3schools.com).
+- Fonts featured in the text are sourced from [Google](https://fonts.google.com/).
+- Favicon is sourced from [Flaticon](https://www.flaticon.com/free-icon/engine_5366543), adapted in PS6 with colors and sizes.
+
+### The Media
+
+The images used on the home and about pages are credited to the following talented photographers on [Pexels](https://www.pexels.com/) .
+ 
+- [Chinmay-Singh](https://www.pexels.com/sv-se/@chinmay-singh-251922/)
+
+- [Ren Lavsad](https://www.pexels.com/sv-se/@ren-lavsad-379156630/)
+
+- [Mark Plötz](https://www.pexels.com/sv-se/@markp/)
+
+- [HH](https://www.pexels.com/sv-se/@h-h-227297/)
+
+The images used on the about page are sourced from Wikipedia.
+
+- [Wikipedia - Rudolf Diesel](https://commons.wikimedia.org/wiki/File:Rudolf_Diesel2.jpg)
+
+- [Wikipedia - Diesel Engine](https://commons.wikimedia.org/wiki/File:Diselmotor,_Genomsk%C3%A4rning,_Nordisk_familjebok.png)
