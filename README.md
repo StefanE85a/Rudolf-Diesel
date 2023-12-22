@@ -102,9 +102,9 @@ You can explore the live site by clicking on the following links:
 ### The Content
 
 - The content for the About page has been adapted from a [Wikipedia article](https://en.wikipedia.org/wiki/Rudolf_Diesel#Early_life_and_education) about Rudolf Diesel.
-- I had guidance to implement the form of validation on the "Sign up page", responsive menu and hero-image from [Code institute](https://codeinstitute.net/ie/) videos.
+- I had guidance to implement the form of validation on the "Sign up page", responsive menu, footer and hero-image from [Code institute](https://codeinstitute.net/ie/) videos.
 - Icons featured in the footer are sourced from [Fontawesome](https://fontawesome.com/start).
-- The gallery imagesand "Learn More" -button is adapted from [W3Schools](https://www.w3schools.com).
+- The gallery images and "Learn More" -button is adapted from [W3Schools](https://www.w3schools.com).
 - Fonts featured in the text are sourced from [Google](https://fonts.google.com/).
 - Favicon is sourced from [Flaticon](https://www.flaticon.com/free-icon/engine_5366543), adapted in PS6 with colors and sizes.
 
